@@ -1,5 +1,8 @@
-import pandas as pd
-import numpy as np
+import importlib
+
+pd = importlib.import_module("pandas")
+np = importlib.import_module("numpy")
+
 
 pd.set_option("display.max_columns", None)
 pd.set_option("display.width", 200)
